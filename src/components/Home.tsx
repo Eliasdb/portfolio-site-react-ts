@@ -18,6 +18,7 @@ const Home = () => {
           esse, a tenetur quos dignissimos tempore debitis nesciunt eos
           reiciendis.
         </p>
+
         <div>
           <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-gray-800 hover:border-gray-800">
             View work

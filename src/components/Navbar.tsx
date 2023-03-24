@@ -29,7 +29,12 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       {/* links */}
       <ul className="hidden md:flex">
         {links.map((link) => (
-          <li key={link.id}>{link.text}</li>
+          <li>
+            <a href="#" className="group text-gray-30 transition duration-300">
+              {link.text}
+              <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A5ABBD]"></span>
+            </a>
+          </li>
         ))}
       </ul>
       <button onClick={toggleTheme}>
