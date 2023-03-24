@@ -2,12 +2,14 @@ import mp4 from "../assets/EDB.mp4";
 import { links, socials } from "../data/data";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
+import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, lightMode }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   const handleClick = () => setIsSidebarOpen(!isSidebarOpen);
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300 z-50">
@@ -22,6 +24,9 @@ const Navbar = () => {
           <li key={link.id}>{link.text}</li>
         ))}
       </ul>
+      <button onClick={toggleTheme}>
+        {lightMode ? <MdLightMode /> : <MdDarkMode />}
+      </button>
       {/* hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">
         {isSidebarOpen ? <FaTimes /> : <FaBars />}
