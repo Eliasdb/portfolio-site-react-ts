@@ -3,28 +3,28 @@ import "./App.css";
 import About from "./components/About";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import VantaWrapper from "./components/VantaWrapper";
-import VantaWrapper2 from "./components/VantaWrapper2";
+import VantaWrapperDark from "./components/VantaWrapperDark";
+import VantaWrapperLight from "./components/VantaWrapperLight";
 
 function App() {
-  const [lightMode, setLightMode] = useState(false);
+  const [lightMode, setLightMode] = useState(true);
 
   const toggleTheme = () => setLightMode(!lightMode);
 
   return (
     <div>
       {lightMode ? (
-        <VantaWrapper>
+        <VantaWrapperLight>
           <Navbar toggleTheme={toggleTheme} lightMode={lightMode} />
           <Home />
           <About />
-        </VantaWrapper>
+        </VantaWrapperLight>
       ) : (
-        <VantaWrapper2>
+        <VantaWrapperDark>
           <Navbar toggleTheme={toggleTheme} lightMode={lightMode} />
           <Home />
           <About />
-        </VantaWrapper2>
+        </VantaWrapperDark>
       )}
     </div>
   );

@@ -1,4 +1,6 @@
-import mp4 from "../assets/EDB.mp4";
+import mp4Dark from "../assets/dark-logo.mp4";
+import mp4Light from "../assets/light-logo.mp4";
+
 import { links, socials } from "../data/data";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
@@ -14,9 +16,15 @@ const Navbar = ({ toggleTheme, lightMode }) => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300 z-50">
       <div>
-        <video width="77" autoPlay muted>
-          <source src={mp4} type="video/mp4" />
-        </video>
+        {lightMode ? (
+          <video width="77" autoPlay muted>
+            <source src={mp4Light} type="video/mp4" />
+          </video>
+        ) : (
+          <video width="77" autoPlay muted>
+            <source src={mp4Dark} type="video/mp4" />
+          </video>
+        )}
       </div>
       {/* links */}
       <ul className="hidden md:flex">
@@ -25,7 +33,7 @@ const Navbar = ({ toggleTheme, lightMode }) => {
         ))}
       </ul>
       <button onClick={toggleTheme}>
-        {lightMode ? <MdLightMode /> : <MdDarkMode />}
+        {lightMode ? <MdLightMode size={25} /> : <MdDarkMode size={25} />}
       </button>
       {/* hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">

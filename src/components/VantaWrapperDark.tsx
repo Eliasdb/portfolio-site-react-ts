@@ -1,7 +1,7 @@
 import NET from "vanta/dist/vanta.net.min";
 import { useState, useEffect, useRef } from "react";
 
-const VantaWrapper = ({ children }) => {
+const VantaWrapperDark = ({ children }) => {
   const [vantaEffect, setVantaEffect] = useState(null);
   const myRef = useRef(null);
   useEffect(() => {
@@ -29,4 +29,4 @@ const VantaWrapper = ({ children }) => {
 
   return <div ref={myRef}>{children}</div>;
 };
-export default VantaWrapper;
+export default VantaWrapperDark;
