@@ -1,0 +1,278 @@
+<!-- de map app extenden die de basis vormt van alle paginas aan de admin side -->
+
+<!-- page title -->
+<!-- de main content sectie openen en erin zetten wat je wil tonen op deze pagina -->
+
+
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Adagio | Veeva Cheatsheet
+</title>  
+	<!-- de head inladen -->
+	<!-- dit is de head die op elke pagina van de admin side gebruikt word -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Adagio | testing HUB</title>
+        <!-- Jquery3.2 -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <!-- popper.js for Bootstrap -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!-- Bootstrap 4 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- Fonts -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+        <!-- font awsome -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.all.min.js" integrity="sha256-Qfxgn9jULeGAdbaeDjXeIhZB3Ra6NCK3dvjwAG8Y+xU=" crossorigin="anonymous"></script>
+    <style>
+        .center-block {
+            width:10px !important;
+          }
+
+          .copy {
+            float:right;
+          }
+
+          .btn {
+            float:left;
+            margin-bottom:10px;
+          }
+
+          input {
+              border:none;
+          }
+          input:focus {
+              background-color:lightgrey;
+              padding-bottom:3px;
+          }
+        </style>
+    </head>
+<body style='background-color: darkblue'>
+		<!-- de header inladen -->
+				<!-- navbar -->
+
+
+    		<!-- de content die per pagina verschillend zal zijn inladen -->
+    <div class='container' style='height:100%'>
+    <div style='border: 1px black solid; margin-top:30px; margin-bottom:30px; padding:50px; text-align:center; padding-bottom:15px;background-color:#FFF;border-radius:15px;'>
+      <div style='width:100%; padding-bottom:25px;' ><img src='/testing/storage/img/index.jpg' style="margin-left:auto; margin-right:auto;"> </div>
+      <div style="font-size:35px;">Cheat Sheet</div>
+      <div style='padding-top:30px;margin-left:auto;margin-right:auto;'>
+        <!-- mss nog voor elk segment een dropdown maken kan je zelf kiezen wat je open klikt -->
+        <div class="row">
+          <div class="info col-md-5 col-md-offset-2" align="right">Name:</div>
+          <div id="copy" class="center-block col-md-3">&#123;&#123;userName&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;userName&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:23px; width:20px;" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-5 col-md-offset-2" align="right">Email:</div>
+          <div id="copy1" class="center-block col-md-3">&#123;&#123;userEmailAddress&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;userEmailAddress&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-2 col-md-offset-1" align="right">Subject line:</div>
+          <div id="copy2" style="text-align:left;text-align:center" value="&#123;&#123;customText(100|..)&#125;&#125;" class="center-block col-md-3">&#123;&#123;customText(100|..)&#125;&#125;</div>
+          <input type="text" id="subj" class="center-block col-md-3" style="height:24px;" placeholder="<subject_line>" align="right">
+              <button id="subjButton" class="btn" style="margin-left:5px;height:41px !important;" data-clipboard-target="#copy2">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png"  style="height:25px !important; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-4 col-md-offset-2" align="right">Salutation (be-nl):</div>
+          <div id="copy3" class="center-block col-md-4">&#123;&#123;customText(255|Beste Dr.)&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;customText(255|Beste Dr.)&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-4 col-md-offset-2" align="right">Salutation (be-lu):</div>
+          <div id="copy4" class="center-block col-md-4">&#123;&#123;customText(255|Cher Docteur)&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;customText(255|Cher Docteur)&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-2 col-md-offset-1" align="right">local document:</div>
+          <div id="copy5" style="text-align:left;text-align:center" value="&#123;&#123;$doc_id&#125;&#125;" class="center-block col-md-3">&#123;&#123;$doc_id&#125;&#125;</div>
+          <input type="text" name="quantity" id="fragment" class="center-block col-md-3" style="height:24px;" placeholder="<fragment_id>" align="right" />
+              <button id="fragmentid" class="btn" style="margin-left:5px;" data-clipboard-target="#copy5">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-5 col-md-offset-2" align="right">Email fragments:</div>
+          <div id="copy6" class="center-block col-md-3">&#123;&#123;insertEmailFragments&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;insertEmailFragments&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-5 col-md-offset-2" align="right">Template fragment:</div>
+          <div id="copy7" class="center-block col-md-3">&#123;&#123;emailTemplateFragment&#125;&#125;</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="&#123;&#123;emailTemplateFragment&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+          <div class="info col-md-5 col-md-offset-2" align="right">Utm's:</div>
+          <div id="copy8" class="center-block col-md-3">?utm_campaign=&#123;&#123;App</div>
+              <!-- Trigger -->
+              <button class="btn" style="margin-left:5px;" data-clipboard-text="?utm_campaign=&#123;&#123;Approved_Document_vod__c.Vault_Document_ID_vod__c&#125;&#125;&utm_source=iconnect&utm_medium=email&codsId=&#123;&#123;Account.CODS_External_Id__c&#125;&#125;&emailId=&#123;&#123;Approved_Document_vod__c.Vault_Document_ID_vod__c&#125;&#125;">
+                  <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+              </button>
+        </div>
+        <div class="row">
+            <div class="info col-md-5 col-md-offset-2" align="right">Auto-fill for forms from email:</div>
+            <div id="copy8" class="center-block col-md-3">?emailAddress=</div>
+                <!-- Trigger -->
+                <button class="btn" style="margin-left:5px;" data-clipboard-text="?emailAddress=&#123;&#123;Account.PersonEmail&#125;&#125;&fName=&#123;&#123;accFname&#125;&#125;&lName=&#123;&#123;accLname&#125;&#125;">
+                    <img src="https://user-images.githubusercontent.com/35342691/34890669-d3a7694e-f7a0-11e7-8ebe-bc926c10c328.png" style="height:25px; width : 20px" alt="Copy to clipboard">
+                </button>
+          </div>
+        <center><a type="button" href="http://localhost/testing/public/Veeva" style="float:none;margin-top:25px;" class="btn btn-warning">Back</a></center>
+    </div>
+</div>
+      <!-- de footer inladen -->
+		<!-- dit is de footer die op elke pagina verschijnt -->
+<div style="color:#FFF; text-align:center;padding-bottom:20px;">
+© 2019 Adagio | Sint-Denijslaan, 96 - 9000 Ghent | Tel. +32 9 279 42 48 | Support: <a href="mailto:info@adagio.company">info@adagio.company</a> | Click <a href="https://www.adagio.company">here</a> to visit our website 
+</div>
+  <!-- de footer section kan je aanspreken op de pagina die je wil tonen en daar een footerSection maken zodat je iets in de footer kunt steken die enkel op die pagina beschikbaar is -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+
+<script>
+//declaring variables should probably be 2 let's
+var str;
+var strnum;
+var myString;
+
+$(document).ready(function () {
+  //called when key is pressed in textbox
+  $("#fragment").keypress(function (e) {
+      
+     //if the letter is not digit then display error and don't type anything
+     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+               return false;
+    }
+
+   });
+});
+
+// initializing a new clipboard shuld be a let aswell
+var clipboard = new ClipboardJS('.btn');
+
+clipboard.on('success', function(e) {
+    console.info('Action:', e.action);
+    console.info('Text:', e.text);
+    console.info('Trigger:', e.trigger);
+
+    //e.clearSelection();
+});
+clipboard.on('error', function(e) {
+    console.error('Action:', e.action);
+    console.error('Trigger:', e.trigger);
+});
+
+
+var change = document.getElementById("fragment");
+// start event listener for the doc_id line number input
+change.addEventListener("keyup", function() {
+        addActivityItem1();
+});
+function addActivityItem1(){
+    str = document.getElementById('fragment').value;
+    if(str == ""){
+        str = "doc_id"
+    }
+    document.getElementById('copy5').innerHTML = "&#123;&#123;$"+str+"&#125;&#125;";
+}
+
+var change = document.getElementById("subj");
+// start event listener for the subject line text input
+change.addEventListener("keyup", function() {
+        addActivityItem();
+});
+// function after the event occured
+function addActivityItem() {
+    str = document.getElementById('subj').value;
+    //if the subject is longer then 100 characters
+    if(str.length > 100) {
+    //putting the correct into
+    document.getElementById('copy2').innerHTML = "&#123;&#123;customText("+str.length+"|"+document.getElementById('subj').value+")&#125;&#125;";
+    } else {
+        document.getElementById('copy2').innerHTML = "&#123;&#123;customText(100|"+document.getElementById('subj').value+")&#125;&#125;";
+    }
+}
+
+//custom clipboard for subject_line with sweetalert
+new ClipboardJS('#subjButton', {
+    text: function(trigger) {
+        str = document.getElementById('subj').value;
+        //checking if the subject line is bigger then 100 characters
+        if(str.length > 100 ){
+            //initializing sweetalert
+            const swalWithBootstrapButtons = Swal.mixin({
+            confirmButtonClass: 'btn btn-success',
+            cancelButtonClass: 'btn btn-warning',
+            buttonsStyling: false,
+            })
+
+            swalWithBootstrapButtons({
+            title: 'Warning',
+            text: "The subject line is too big to render entirely",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Let me change it',
+            cancelButtonText: "Ignore warning" ,
+            reverseButtons: true
+            }).then((result) => {
+                //changing the subject line
+            if (result.value) {
+                swalWithBootstrapButtons(
+                'Good choice',
+                'Please write a subject line shorter then 100 characters',
+                'success'
+                )
+                // Keep Going with a subject line that is too big
+            } else if (
+                // Read more about handling dismissals
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons(
+                'Why though?',
+                "Copied anyway!",
+                'warning'
+                )
+                return trigger.getAttribute('data-clipboard-text'); 
+            }
+            })
+        } else {
+        document.getElementById('copy2').innerHTML = "&#123;&#123;customText(100|"+document.getElementById('subj').value+")&#125;&#125;";
+        return trigger.getAttribute('data-clipboard-text');
+        }
+    }
+});
+
+//custom clipboard for doc_id input
+new ClipboardJS('#fragmentid', {
+    text: function(trigger) {
+        return trigger.getAttribute('data-clipboard-text');
+    }
+});
+</script>
+</body>
+</html>

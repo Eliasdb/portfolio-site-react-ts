@@ -1,0 +1,58 @@
+﻿                                Veeva/Iconnect approved emails
+
+
+    --cheatsheet
+
+    {{userName}}
+    {{userEmailAddress}}
+    {{customText(100|<subject_line>)}}
+
+    {{customText(255|Beste Dokter,)}}
+    {{customText(255|Cher Docteur,)}}
+
+    DE 18072018 Footer - Text (v2.0) --email template fragment germany
+
+  -- Email Fragments
+     {{insertEmailFragments}}
+  -- Email Template
+     {{emailTemplateFragment}} 
+  -- Linking a document 
+     add as email fragment en aproven
+     (get document ID) 
+     add to other related documents from email template
+     <a href="{{$document_id}}" style="text-decoration: none; color: #ed842a; font-size: 16px;">
+        document
+     </a>
+
+    --Notes 
+
+    The basic steps for sending a email through veeva
+
+        1. HTML file + Assets
+            uploading file
+            choose document type
+            subject line alles aanpasbaar bhlve uk
+            preheader subject in body verwijderen (indien aanwezig)
+        2. Draft
+        3. Staged on testing -> email on acid (testing)
+        4. Aproval (ticketting) 
+            Sending email to yourself -> iconnect -> search test adagio
+            download it and send it over iconnect to the clients 
+            @refferring the names from the briefing
+            Approval aan klant vragen -> groups ->$land Digital Assets
+        (4.1 Adjusting according to the clients needs)
+        5. approved
+        6. Expired
+
+
+    Special attention for
+
+    •	Zit de pre-header erin? 
+    •	Ziet het design er goed uit op alle email clients? 
+    •	Zitten de tracking parameters in de JMC links? 
+    •	Bij de afmeld link moet de webid erbij zitten
+    •	Werken alle links achter de buttons? 
+    •	Redirecten de links naar de juiste pagina’s? 
+
+?utm_campaign={{Approved_Document_vod__c.Vault_Document_ID_vod__c}}&utm_source=iconnect&utm_medium=email&codsId={{Account.CODS_External_Id__c}}&emailId={{Approved_Document_vod__c.Vault_Document_ID_vod__c}}
+

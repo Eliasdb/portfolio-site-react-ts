@@ -1,0 +1,79 @@
+﻿Improved testing workflow (email):
+We all got to work together to improve the quality of our delivered product.
+Our testing is still in beta version and there's room for improvements.
+After a little while of experience with email testing for Adagio,
+I've seen some areas that easely could be improved without too much effort from all of us.
+
+PM's
+Ik had graag een duidelijke briefing gehad van de Pm's, een mapje in gdrive/mail is voldoende met:
+Het laatste approved pdf'je
+Een documentje (al dan niet mijn template document) met alle handige info: (Template name, subject line, preheader, docs, wie te taggen,...)
+
+DEV's
+Ik had graag een zip-file'tje gehad met de laatste versie van de template('s) en assets
+
+Tester/uplaoder
+Maak een draaiboek van alle brandings van alle landen zodat je altijd zeker bent dat je de correcte branding hebt. 
+afspreken met dieter om bij de kleinste update up-to-date te blijven.
+Maak een overzicht van alle templates de bijhorende info en hun statussen (zie .excel bestand maar daar wil ik nog graag een program voor schrijven.)
+
+fase 1: quick overlook of the template and the pdf so all the content is what it has to be. 
+fase 2: Url's checken (correctness, utm's, target blank) img's checken (only veeva hosted assets) 
+fase 3: uploading 
+nu is fase 1-3 te timeconsumming because i have to go on a treasure hunt to find the correct info somethimes.
+fase 4: veeva html on email on acid 
+fase 5: last check iconnect send mail to yourself. Check all the urls and all the content one last time 
+fase 6: fill in the test report  (see attachment) 
+fase 7: Ticketting en opvolging 
+fase 8: approven
+(fase 9: minor improvements) 
+
+Testing forms/landing pages/...:
+
+eloqua info,
+initial briefing off the forms so he can check what has to do what exactly
+A knowledge off eloqua is usefull here since he can check if the data is processed correctly and is tracked accordingly.
+if there's a pdf always provide him the pdf,
+-> after having a good understanding what the form has to do, go to browserstack.
+
+browserstack testing: 
+first make fullscreen pdf's off all the pages you've got to test.
+in the upperleft corner tag the url off the page.
+Open the corresponding pdf next to page you're testing and if you see an anomaly, 
+just tag it in the appropriate place + specify which browser you are using.
+
+windows 10 : internet explorer/edge latest versions
+           : firefox/google chrome and opera  de laatste en 3 versies terug
+Mac: High sierra en sierra -> safari laatste
+Ios-> iphone X , Iphone 7 of 6,Ipad steekproefkes chrome en safari (5-6)
+Android enkel samsung: steekproeven (2-3)
+Ipad: steekproeven (2-3)
+
+(a little help for the tester
+Check list
+- Page URL
+- Images (banner / logo / img’s)
+- Content
+- Links
+- Zinc nummer
+- Vertalingen
+- Vorige feedback
+- Access voor videos
+- Controle content andere versie (BE-NL-FR)
+BENELUX screenings altijd per page!!
+Zelfde ZINC code)
+
+janssen login : jmcuser
+              : jmcPrePrd2017
+
+after this combine the pdf's off the same project so it is easier for the pm to review your report.
+
+-> dev does his magic and fixes all the flaws.
+-> last check if everything is indeed fixed.
+
+Hand over you're testing report? to pm?
+
+-- testing report
+pages tested:
+pdf's
+on which browser we provide assurance.

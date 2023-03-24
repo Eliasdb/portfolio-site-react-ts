@@ -1,0 +1,11 @@
+﻿        HTML Email restrictions:
+- geen div’s
+- steeds structuur volgen van table->tr->td
+- geen margin (tenzij media-querie);
+- geen float (tenzij in media-querie);
+- de email mag max 600px width hebben;
+- 20px tussen tables (die naast elkaar staan) laten;
+- geen custom fonts;
+- geen p-tags;
+- geen schrik hebben om templates te hergebruiken;
+- images in container max 520px width (padding:20px 40px;);

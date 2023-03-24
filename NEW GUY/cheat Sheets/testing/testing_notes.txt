@@ -1,0 +1,27 @@
+Testing
+
+Name pdf's LANG/NAME/ZINCCODE
+
+Check list
+
+- Page URL
+- Images (banner / logo / img’s)
+- Content
+- Links
+- Zinc nummer
+- Vertalingen
+- Vorige feedback
+- Access voor videos
+- Controle content andere versie (BE-NL-FR)
+
+BENELUX screenings altijd per page!!
+
+Pdf’s filenames mogen niet beschikken over volgende karakters:
+/ ? < > \ : * | or ".
+
+Adagio dieter = Lotte
+
+Zelfde ZINC code -> screens bundelen!
+
+
+testjnjjowa+ch_fr@gmail.com  janssen1234
