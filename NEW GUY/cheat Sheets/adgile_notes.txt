@@ -1,5 +1,0 @@
-Adgile -- inliner
-
-adg inline  (alles inline zetten)
-adg build -s ( -serve : a watch-like functie)
-adg build -p ( -production : minifying and setting everything up for production)
