@@ -4,7 +4,7 @@ import mp4Light from "../assets/light-logo.mp4";
 import { links, socials } from "../data/data";
 import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import { MdLightMode, MdDarkMode } from "react-icons/md";
+import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { useState } from "react";
@@ -14,7 +14,7 @@ const Navbar = ({ toggleTheme, lightMode }) => {
 
   const handleClick = () => setIsSidebarOpen(!isSidebarOpen);
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4  text-gray-300 z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f] z-50">
       <div>
         {lightMode ? (
           <video width="77" autoPlay muted>
@@ -29,7 +29,7 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       {/* links */}
       <ul className="hidden md:flex">
         {links.map((link) => (
-          <li>
+          <li key={link.id}>
             <a href="#" className="group text-gray-30 transition duration-300">
               {link.text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A5ABBD]"></span>
@@ -38,7 +38,11 @@ const Navbar = ({ toggleTheme, lightMode }) => {
         ))}
       </ul>
       <button onClick={toggleTheme}>
-        {lightMode ? <MdLightMode size={25} /> : <MdDarkMode size={25} />}
+        {lightMode ? (
+          <MdDarkMode size={25} />
+        ) : (
+          <MdOutlineLightMode size={25} />
+        )}
       </button>
       {/* hamburger */}
       <div onClick={handleClick} className="md:hidden z-10">

@@ -2,6 +2,13 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+import HTML from "../assets/html.png";
+import CSS from "../assets/css.png";
+import JS from "../assets/javascript.png";
+import React from "../assets/react.png";
+import Tailwind from "../assets/tailwind.png";
+import Node from "../assets/node.png";
+
 export const links = [
   {
     id: 1,
@@ -65,5 +72,40 @@ export const socials = [
       />
     ),
     url: "www.google.com?q=put_it_here",
+  },
+];
+
+export const skills = [
+  {
+    id: 1,
+    text: "HTML",
+    url: HTML,
+  },
+  {
+    id: 2,
+    text: "CSS",
+    url: CSS,
+  },
+  {
+    id: 3,
+    text: "Javascript",
+    url: JS,
+  },
+  {
+    id: 4,
+    text: "Node",
+    url: Node,
+  },
+
+  {
+    id: 5,
+    text: "Tailwind",
+    url: Tailwind,
+  },
+
+  {
+    id: 6,
+    text: "React",
+    url: React,
   },
 ];

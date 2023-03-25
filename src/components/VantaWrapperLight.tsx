@@ -17,7 +17,7 @@ const VantaWrapperLight = ({ children }) => {
           scale: 1.0,
           scaleMobile: 1.0,
           color: "#0a192f",
-          backgroundColor: "#717788",
+          backgroundColor: "#b4ccef",
           zIndex: 2,
         })
       );
