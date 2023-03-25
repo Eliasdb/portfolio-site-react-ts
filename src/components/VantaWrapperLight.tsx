@@ -1,4 +1,5 @@
 import NET from "vanta/dist/vanta.net.min";
+import * as THREE from "three";
 import { useState, useEffect, useRef } from "react";
 
 const VantaWrapperLight = ({ children }) => {
@@ -9,6 +10,7 @@ const VantaWrapperLight = ({ children }) => {
       setVantaEffect(
         NET({
           el: myRef.current,
+          THREE: THREE,
           mouseControls: true,
           touchControls: true,
           gyroControls: false,
@@ -18,6 +20,8 @@ const VantaWrapperLight = ({ children }) => {
           scaleMobile: 1.0,
           color: "#0a192f",
           backgroundColor: "#b4ccef",
+          showDots: false,
+
           zIndex: 2,
         })
       );

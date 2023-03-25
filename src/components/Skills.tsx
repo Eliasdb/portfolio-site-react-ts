@@ -12,7 +12,7 @@ const Skills = () => {
           <p className="text-4xl font-bold inline border-b-4 border-[#A5ABBD]">
             Skills
           </p>
-          <p className="py-4">// Technologies I have worked with</p>
+          <p className="py-4">// Technologies I have experience with</p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
           {skills.map((skill) => {
@@ -27,7 +27,7 @@ const Skills = () => {
                   src={`${url}`}
                   alt={`${text} icon`}
                 />
-                <p className="my-4">{text}</p>
+                <p className="my-4 font-bold">{text}</p>
               </div>
             );
           })}

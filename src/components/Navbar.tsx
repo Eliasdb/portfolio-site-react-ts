@@ -1,11 +1,9 @@
 import mp4Dark from "../assets/dark-logo.mp4";
-import mp4Light from "../assets/light-logo.mp4";
+import mp4Light from "../assets/edb-3.mp4";
 
 import { links, socials } from "../data/data";
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import { useState } from "react";
 
@@ -30,7 +28,10 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       <ul className="hidden md:flex">
         {links.map((link) => (
           <li key={link.id}>
-            <a href="#" className="group text-gray-30 transition duration-300">
+            <a
+              href="#"
+              className="group text-gray-30 font-bold transition duration-300"
+            >
               {link.text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A5ABBD]"></span>
             </a>
@@ -53,7 +54,7 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       <ul
         className={
           isSidebarOpen
-            ? "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            ? "absolute top-0 left-0 w-full h-screen dark:bg-[#0a192f] bg-[#b4ccef] flex flex-col justify-center items-center"
             : "hidden"
         }
       >

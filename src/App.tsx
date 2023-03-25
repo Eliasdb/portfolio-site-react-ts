@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 import Skills from "./components/Skills";
 import VantaWrapperDark from "./components/VantaWrapperDark";
 import VantaWrapperLight from "./components/VantaWrapperLight";
-import Work from "./components/Work";
+import Projects from "./components/Projects";
 
 function App() {
   const [lightMode, setLightMode] = useState(false);
@@ -22,7 +22,7 @@ function App() {
             <Home />
             <About />
             <Skills />
-            <Work />
+            <Projects />
           </VantaWrapperLight>
         </>
       ) : (
@@ -32,7 +32,7 @@ function App() {
             <Home />
             <About />
             <Skills />
-            <Work />
+            <Projects />
           </VantaWrapperDark>
         </>
       )}
