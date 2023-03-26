@@ -9,7 +9,7 @@ const Home = () => {
           Elias De Bock
         </h1>
         <h2 className="text-4xl sm:text-7xl font-bold   text-[#212328] dark:text-[#717788]">
-          I'm a Frontend Developer
+          I'm a Frontend Developer.
         </h2>
         <p className="text-[#0a192f] dark:text-[#A5ABBD] py-4 max-w-[700px]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quis

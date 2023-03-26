@@ -21,7 +21,8 @@ const VantaWrapperLight = ({ children }) => {
           color: "#0a192f",
           backgroundColor: "#b4ccef",
           showDots: false,
-
+          points: 8.0,
+          spacing: 20.0,
           zIndex: 2,
         })
       );

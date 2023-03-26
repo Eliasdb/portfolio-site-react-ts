@@ -16,7 +16,7 @@ const Skills = () => {
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
           {skills.map((skill) => {
-            const { id, text, url } = skill;
+            const { id, text, image } = skill;
             return (
               <div
                 className="shadow-smx shadow-[#040c16] hover:scale-110 duration-500"
@@ -24,7 +24,7 @@ const Skills = () => {
               >
                 <img
                   className="w-20 mx-auto"
-                  src={`${url}`}
+                  src={`${image}`}
                   alt={`${text} icon`}
                 />
                 <p className="my-4 font-bold">{text}</p>

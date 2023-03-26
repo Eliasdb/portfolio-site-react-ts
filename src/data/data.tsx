@@ -8,7 +8,7 @@ import JS from "../assets/javascript.png";
 import React from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
-
+import WorkImg from "../assets/workImg.jpeg";
 export const links = [
   {
     id: 1,
@@ -79,33 +79,57 @@ export const skills = [
   {
     id: 1,
     text: "HTML",
-    url: HTML,
+    image: HTML,
   },
   {
     id: 2,
     text: "CSS",
-    url: CSS,
+    image: CSS,
   },
   {
     id: 3,
     text: "Javascript",
-    url: JS,
+    image: JS,
   },
   {
     id: 4,
     text: "Node",
-    url: Node,
+    image: Node,
   },
 
   {
     id: 5,
     text: "Tailwind",
-    url: Tailwind,
+    image: Tailwind,
   },
 
   {
     id: 6,
     text: "React",
-    url: React,
+    image: React,
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    text: "Project 1",
+    image: WorkImg,
+    demo: "",
+    code: "",
+  },
+  {
+    id: 2,
+    text: "Project 2",
+    image: WorkImg,
+    demo: "",
+    code: "",
+  },
+  {
+    id: 3,
+    text: "Project 3",
+    image: WorkImg,
+    demo: "",
+    code: "",
   },
 ];
