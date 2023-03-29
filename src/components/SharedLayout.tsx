@@ -4,9 +4,9 @@ import Navbar from "./Navbar";
 import Background from "./Background";
 
 const SharedLayout = () => {
-  const { lightMode } = useGlobalContext();
+  const { darkMode } = useGlobalContext();
   return (
-    <div className={lightMode ? "" : "dark"}>
+    <div className={darkMode ? "dark" : ""}>
       <Navbar />
       <Outlet />
       <Background />

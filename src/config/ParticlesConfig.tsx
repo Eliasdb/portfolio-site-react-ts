@@ -83,7 +83,7 @@ const ParticlesConfig = {
         },
         particles: {
           color: {
-            value: "#717788",
+            value: "#b4ccef",
           },
         },
       },

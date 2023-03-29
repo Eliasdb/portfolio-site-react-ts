@@ -5,7 +5,7 @@ import Particles from "react-tsparticles";
 import React, { useEffect, useState } from "react";
 import { useGlobalContext } from "../context/context";
 
-const Background = (props) => {
+const Background = () => {
   const { theme } = useGlobalContext();
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);

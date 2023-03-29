@@ -47,3 +47,22 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+a.color-active.active {
+  color: #858c97;
+  font-weight: bold;
+}
+
+a.color-active-dark.active {
+  color: rgb(107 114 128);
+
+  font-weight: bold;
+}
+
+body * {
+  @apply duration-300;
+}
+
+/* * {
+  transition-duration: 3s;
+} */

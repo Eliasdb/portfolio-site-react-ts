@@ -1,4 +1,5 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -20,12 +21,14 @@ const Home = () => {
         </p>
 
         <div>
-          <button className="dark:text-white text-[#0a192f] group border-2 px-6 py-3 my-2 flex items-center hover:bg-gray-800 hover:border-gray-800 dark:border-[#233044] dark:hover:bg-[#233044] dark:hover:opacity-90 border-[#0a192f]">
-            View projects
-            <span className="group-hover:rotate-90 duration-300">
-              <HiArrowNarrowRight className="ml-3" />
-            </span>
-          </button>
+          <Link to="/projects">
+            <button className="dark:text-white text-[#0a192f] group border-2 px-6 py-3 my-2 flex items-center hover:bg-gray-800 hover:border-gray-800 dark:border-[#233044] dark:hover:bg-[#233044] dark:hover:opacity-90 border-[#0a192f]">
+              View projects
+              <span className="group-hover:rotate-90 duration-300">
+                <HiArrowNarrowRight className="ml-3" />
+              </span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>

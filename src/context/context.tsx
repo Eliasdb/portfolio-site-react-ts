@@ -5,7 +5,7 @@ const GlobalContext = createContext();
 export const useGlobalContext = () => useContext(GlobalContext);
 
 const AppContext = ({ children }) => {
-  const [lightMode, setLightMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   const [theme, setTheme] = useState("dark");
 
@@ -16,8 +16,8 @@ const AppContext = ({ children }) => {
   return (
     <GlobalContext.Provider
       value={{
-        lightMode,
-        setLightMode,
+        darkMode,
+        setDarkMode,
         theme,
         setTheme,
         isSidebarOpen,

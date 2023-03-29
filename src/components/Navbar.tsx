@@ -1,59 +1,68 @@
 import mp4Dark from "../assets/dark-logo.mp4";
-import mp4Light from "../assets/edb-3.mp4";
-import { Link } from "react-router-dom";
+import mp4Light from "../assets/light-logo.mp4";
+
 import { links, socials } from "../data/data";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 
-import { useState } from "react";
+import { NavLink, Link } from "react-router-dom";
+
 import { useGlobalContext } from "../context/context";
 
 const Navbar = () => {
-  const { lightMode, setLightMode, setTheme, isSidebarOpen, handleSidebar } =
+  const { darkMode, setDarkMode, setTheme, isSidebarOpen, handleSidebar } =
     useGlobalContext();
 
   const toggleDarkMode = () => {
-    setLightMode(false);
+    setDarkMode(true);
     setTheme("dark");
   };
   const toggleLightMode = () => {
-    setLightMode(true);
+    setDarkMode(false);
     setTheme("light");
   };
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f]">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f] z-20 dark:bg-[#0a192f] bg-[#b4ccef]">
       <div>
-        {lightMode ? (
-          <video width="77" autoPlay muted>
-            <source src={mp4Light} type="video/mp4" />
-          </video>
+        {darkMode ? (
+          <NavLink to="/">
+            <video width="77" autoPlay muted>
+              <source src={mp4Dark} type="video/mp4" />
+            </video>
+          </NavLink>
         ) : (
-          <video width="77" autoPlay muted>
-            <source src={mp4Dark} type="video/mp4" />
-          </video>
+          <Link to="/">
+            <video width="77" autoPlay muted>
+              <source src={mp4Light} type="video/mp4" />
+            </video>
+          </Link>
         )}
       </div>
       {/* links */}
       <ul className="hidden md:flex">
         {links.map(({ id, url, text }) => (
           <li key={id}>
-            <Link
+            <NavLink
               to={url}
-              className="group text-gray-30 font-bold transition duration-300"
+              className={`group dark:text-gray-300 text-[#0a192f] font-bold transition duration-300 ${
+                darkMode ? "color-active-dark" : "color-active dark"
+              }`}
             >
               {text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A5ABBD]"></span>
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
-      {lightMode ? (
-        <button onClick={toggleDarkMode}>
-          <MdDarkMode size={25} />
-        </button>
-      ) : (
+      {darkMode ? (
         <button onClick={toggleLightMode}>
           <MdOutlineLightMode size={25} />
+        </button>
+      ) : (
+        <button onClick={toggleDarkMode}>
+          <MdDarkMode size={25} />
         </button>
       )}
 
@@ -72,9 +81,15 @@ const Navbar = () => {
       >
         {links.map((link) => (
           <li className="py-6 text-4xl" key={link.id}>
-            <Link to={link.url} onClick={handleSidebar}>
+            <NavLink
+              to={link.url}
+              onClick={handleSidebar}
+              className={`${
+                darkMode ? "color-active-dark" : "color-active dark"
+              }`}
+            >
               {link.text}
-            </Link>
+            </NavLink>
           </li>
         ))}
       </ul>
