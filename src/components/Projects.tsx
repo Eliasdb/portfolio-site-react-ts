@@ -1,13 +1,11 @@
-import WorkImg from "../assets/workImg.jpeg";
-import RealEstateImg from "../assets/realestate.jpg";
 import { projects } from "../data/data";
 
 const Work = () => {
   return (
-    <div className="w-full md:h-screen dark:text-gray-300 text-[#0a192f] ">
+    <div className="w-full md:h-screen dark:text-gray-300 text-[#0a192f]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full ">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 dark:text-gray-300 text-[#0a192f] border-[#A5ABBD]">
+        <div className="pb-8 mt-20 md:mt-0">
+          <p className="text-4xl font-bold inline border-b-4 dark:text-gray-200 text-[#0a192f] border-[#A5ABBD]">
             Projects
           </p>
           <p className="py-6">// Check out my recent work</p>
@@ -19,6 +17,7 @@ const Work = () => {
             const { id, image, text } = project;
             return (
               <div
+                key={id}
                 style={{ backgroundImage: `url(${image})` }}
                 className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
               >

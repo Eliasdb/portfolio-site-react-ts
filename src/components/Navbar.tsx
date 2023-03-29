@@ -1,18 +1,27 @@
 import mp4Dark from "../assets/dark-logo.mp4";
 import mp4Light from "../assets/edb-3.mp4";
-
+import { Link } from "react-router-dom";
 import { links, socials } from "../data/data";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdOutlineLightMode, MdDarkMode } from "react-icons/md";
 
 import { useState } from "react";
+import { useGlobalContext } from "../context/context";
 
-const Navbar = ({ toggleTheme, lightMode }) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+const Navbar = () => {
+  const { lightMode, setLightMode, setTheme, isSidebarOpen, handleSidebar } =
+    useGlobalContext();
 
-  const handleClick = () => setIsSidebarOpen(!isSidebarOpen);
+  const toggleDarkMode = () => {
+    setLightMode(false);
+    setTheme("dark");
+  };
+  const toggleLightMode = () => {
+    setLightMode(true);
+    setTheme("light");
+  };
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f] z-50">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f]">
       <div>
         {lightMode ? (
           <video width="77" autoPlay muted>
@@ -26,27 +35,30 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       </div>
       {/* links */}
       <ul className="hidden md:flex">
-        {links.map((link) => (
-          <li key={link.id}>
-            <a
-              href="#"
+        {links.map(({ id, url, text }) => (
+          <li key={id}>
+            <Link
+              to={url}
               className="group text-gray-30 font-bold transition duration-300"
             >
-              {link.text}
+              {text}
               <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#A5ABBD]"></span>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
-      <button onClick={toggleTheme}>
-        {lightMode ? (
+      {lightMode ? (
+        <button onClick={toggleDarkMode}>
           <MdDarkMode size={25} />
-        ) : (
+        </button>
+      ) : (
+        <button onClick={toggleLightMode}>
           <MdOutlineLightMode size={25} />
-        )}
-      </button>
+        </button>
+      )}
+
       {/* hamburger */}
-      <div onClick={handleClick} className="md:hidden z-10">
+      <div onClick={handleSidebar} className="md:hidden z-10">
         {isSidebarOpen ? <FaTimes /> : <FaBars />}
       </div>
       {/* mobile menu */}
@@ -60,7 +72,9 @@ const Navbar = ({ toggleTheme, lightMode }) => {
       >
         {links.map((link) => (
           <li className="py-6 text-4xl" key={link.id}>
-            {link.text}
+            <Link to={link.url} onClick={handleSidebar}>
+              {link.text}
+            </Link>
           </li>
         ))}
       </ul>

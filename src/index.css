@@ -36,19 +36,6 @@
     rgba(0, 212, 255, 1) 100%
   ) !important;
 }
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-/* If the user prefers light mode, 
-we still enforce color-scheme: dark, despite the user preference */
-@media (prefers-color-scheme: light) {
-  html {
-    color-scheme: dark;
-  }
-}
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 *::-webkit-scrollbar {
