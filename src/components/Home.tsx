@@ -18,7 +18,7 @@ const Home = () => {
         <TypeAnimation
           className="custom-type-animation-cursor text-4xl sm:text-7xl font-black	  text-[#717788] dark:text-[#717788] home font-[Lato]"
           sequence={[
-            1500,
+            2000,
             // "I am a",
             // 500,
             "I am a Frontend Developer.",
@@ -36,7 +36,7 @@ const Home = () => {
         <TypeAnimation
           className="text-[#0a192f] dark:text-[#A5ABBD] py-4 max-w-[700px] duration-1000 home"
           sequence={[
-            4000,
+            5000,
             "Just some text to make sure the animation is fluent and does what it is supposed to do. Also this should be here eventually: Objective? What do I have to offer? What do I want out of this? My value proposition.",
             100,
             (el) => el.classList.remove("custom-type-animation-cursor"),
