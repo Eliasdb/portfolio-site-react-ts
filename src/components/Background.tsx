@@ -26,7 +26,7 @@ const Background = () => {
     }
   }, [theme, particlesContainer]);
   return (
-    <div id="particle-background">
+    <div id="particle-background" className="home">
       <div className="background">
         <Particles
           theme={theme}
