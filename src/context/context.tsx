@@ -12,7 +12,7 @@ const GlobalContext = createContext<GlobalContent>();
 
 export const useGlobalContext = () => useContext(GlobalContext);
 
-const AppContext: FC = ({ children }) => {
+const AppContext = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const [theme, setTheme] = useState<string>("dark");
