@@ -2,10 +2,7 @@ import { skills } from "../data/data";
 
 const Skills = () => {
   return (
-    <div
-      name="skills"
-      className="dark:text-gray-300 text-[#0a192f] w-full h-screen"
-    >
+    <div className="dark:text-gray-300 text-[#0a192f] w-full h-screen">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>

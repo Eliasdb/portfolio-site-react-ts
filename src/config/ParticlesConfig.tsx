@@ -1,4 +1,6 @@
-const ParticlesConfig = {
+import type { Container, ISourceOptions, Engine } from "tsparticles-engine";
+
+const ParticlesConfig: ISourceOptions = {
   autoplay: true,
   fullScreen: {
     enable: true,
@@ -96,11 +98,11 @@ const ParticlesConfig = {
       },
       options: {
         background: {
-          color: "#b4ccef",
+          color: "#b5a7c7",
         },
         particles: {
           color: {
-            value: "#0a192f",
+            value: "#ff48c1",
           },
         },
       },

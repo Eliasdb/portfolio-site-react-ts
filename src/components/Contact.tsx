@@ -1,11 +1,6 @@
-import { Navigate } from "react-router-dom";
-
 const Contact = () => {
   return (
-    <div
-      name="contact"
-      className="w-full h-screen flex justify-center items-center p-4 dark:text-gray-300 text-[#0a192f]"
-    >
+    <div className="w-full h-screen flex justify-center items-center p-4 dark:text-gray-300 text-[#0a192f]">
       <form
         action="https://formspree.io/f/xknaqwyy"
         method="POST"
@@ -34,7 +29,7 @@ const Contact = () => {
         <textarea
           className="dark:bg-[#ccd6f6] p-2 dark:text-[#0a192f]"
           name="message"
-          rows="10"
+          rows={10}
           placeholder="Message"
           required
         />

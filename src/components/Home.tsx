@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
   return (
-    <div name="home" className=" w-full h-screen">
+    <div className=" w-full h-screen">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-40">
         <p className="text-[#3a4658] dark:text-gray-300 duration-1000 home">
           Hi, my name is
@@ -23,7 +23,7 @@ const Home = () => {
             // 500,
             "I am a Frontend Developer.",
             200,
-            (el) => el.classList.remove("custom-type-animation-cursor"),
+            (el) => el?.classList.remove("custom-type-animation-cursor"),
             () => {
               console.log("Sequence completed");
             },
@@ -39,7 +39,7 @@ const Home = () => {
             5000,
             "Just some text to make sure the animation is fluent and does what it is supposed to do. Also this should be here eventually: Objective? What do I have to offer? What do I want out of this? My value proposition.",
             100,
-            (el) => el.classList.remove("custom-type-animation-cursor"),
+            (el) => el?.classList.remove("custom-type-animation-cursor"),
             () => {
               console.log("Sequence completed");
             },

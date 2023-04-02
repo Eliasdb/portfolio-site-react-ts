@@ -1,13 +1,21 @@
-import { createContext, useContext, useState, useRef } from "react";
-
-const GlobalContext = createContext();
+import { createContext, FC, useContext, useState } from "react";
+export type GlobalContent = {
+  darkMode: boolean;
+  setDarkMode: (arg0: boolean) => void;
+  theme: string;
+  setTheme: (arg0: string) => void;
+  isSidebarOpen: boolean;
+  setIsSidebarOpen: (arg0: boolean) => void;
+  handleSidebar: () => void;
+};
+const GlobalContext = createContext<GlobalContent>();
 
 export const useGlobalContext = () => useContext(GlobalContext);
 
-const AppContext = ({ children }) => {
+const AppContext: FC = ({ children }) => {
   const [darkMode, setDarkMode] = useState(true);
 
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState<string>("dark");
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

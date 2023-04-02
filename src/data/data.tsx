@@ -49,7 +49,7 @@ export const socials = [
     id: 2,
     text: "Github",
     color: "#2D0F16",
-    icon: <FaGithub size={30} className="mr-[-10px] lg:mr-0 duration-500" />,
+    icon: <FaGithub size={30} className="mr-[-10px] lg:mr-0 duration-300" />,
     url: "https://github.com/Eliasdb",
   },
   {
@@ -57,7 +57,7 @@ export const socials = [
     text: "Email",
     color: "#A5ABBD",
     icon: (
-      <HiOutlineMail size={30} className="mr-[-10px] lg:mr-0 duration-500" />
+      <HiOutlineMail size={30} className="mr-[-10px] lg:mr-0 duration-300" />
     ),
     url: "mailto:elias.db3@gmail.com",
   },
@@ -68,7 +68,7 @@ export const socials = [
     icon: (
       <BsFillPersonLinesFill
         size={30}
-        className="mr-[-10px] lg:mr-0 duration-500"
+        className="mr-[-10px] lg:mr-0 duration-300"
       />
     ),
     url: "www.google.com?q=put_it_here",
