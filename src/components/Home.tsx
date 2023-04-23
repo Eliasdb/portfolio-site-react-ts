@@ -35,7 +35,7 @@ const Home = () => {
           repeat={0}
         />
 
-        <p className="dark:text-[#8892b0] py-4 max-w-[700px] text-[#0a192f]">
+        <p className="dark:text-[#8892b0] py-4 max-w-[700px] text-[#0a192f] font-[Lato]">
           Having started my journey in the wondrous world of web development in
           2019, I am ready for the next step in my career. I am an ambitious and
           passionate web developer with an eagerness to learn and improve

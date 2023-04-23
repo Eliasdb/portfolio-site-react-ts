@@ -69,6 +69,6 @@ body *:not(.home) {
 }
 @keyframes cursor {
   50% {
-    opacity: 0;
+    opacity: 0.01;
   }
 }

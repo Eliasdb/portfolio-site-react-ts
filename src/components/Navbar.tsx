@@ -93,14 +93,14 @@ const Navbar = () => {
       </ul>
 
       {/* social icons */}
-      <div className="flex fixed flex-col top-[35%] left-0 	">
+      <div className="hidden xl:flex fixed flex-col top-[35%] left-0 ">
         <ul>
           {socials.map((social) => {
             const { id, text, icon, url, color } = social;
             return (
               <li
                 key={id}
-                className="w-[80px] md:w-[142px] lg:w-[160px] h-[40px] md-[50px] lg:h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 rounded-2xl"
+                className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 rounded-xl"
                 style={{ background: color }}
               >
                 <a
