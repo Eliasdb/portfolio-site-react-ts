@@ -1,8 +1,10 @@
-import { createContext, FC, useContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
+import type { ITheme } from "tsparticles-engine";
+
 export type GlobalContent = {
   darkMode: boolean;
   setDarkMode: (arg0: boolean) => void;
-  theme: string;
+  theme: string | ITheme;
   setTheme: (arg0: string) => void;
   isSidebarOpen: boolean;
   setIsSidebarOpen: (arg0: boolean) => void;

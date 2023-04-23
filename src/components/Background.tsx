@@ -1,12 +1,17 @@
 import ParticlesConfig from "../config/ParticlesConfig";
-import { Dispatch, SetStateAction, useCallback } from "react";
+import { useCallback } from "react";
 import { loadFull } from "tsparticles";
-import Particles, { IParticlesProps } from "react-tsparticles";
+import Particles from "react-tsparticles";
 import { useEffect, useState } from "react";
 import { useGlobalContext } from "../context/context";
 import type { Container, Engine } from "tsparticles-engine";
 
 const Background = () => {
+  interface IParticlesProps {
+    init?: (engine: Engine) => Promise<void>;
+    loaded?: (container?: Container) => Promise<void>;
+  }
+
   const { theme } = useGlobalContext();
 
   // type yo = {
@@ -38,13 +43,12 @@ const Background = () => {
       particlesContainer.loadTheme(theme);
     }
   }, [theme, particlesContainer]);
+
   return (
     <div id="particle-background" className="home">
       <div className="background home">
         <Particles
-          theme={theme}
           id="tsparticles"
-          particlesLoaded="particlesLoaded"
           init={particlesInit as IParticlesProps["init"]}
           loaded={particlesLoaded as IParticlesProps["loaded"]}
           options={ParticlesConfig}
