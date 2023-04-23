@@ -1,10 +1,11 @@
-import Particles from "react-tsparticles";
+import Particles, { IParticlesProps } from "react-tsparticles";
 import { loadFull } from "tsparticles"; // loads tsparticles
 import { useCallback, useMemo } from "react";
+import type { Engine } from "tsparticles-engine";
 
 // tsParticles Repository: https://github.com/matteobruni/tsparticles
 // tsParticles Website: https://particles.js.org/
-const ParticlesComponent = (props) => {
+const ParticlesComponent = (props: any) => {
   // using useMemo is not mandatory, but it's recommended since this value can be memoized if static
   const options = useMemo(() => {
     // using an empty options object will load the default options, which are static particles with no background and 3px radius, opacity 100%, white color
@@ -58,13 +59,20 @@ const ParticlesComponent = (props) => {
   }, []);
 
   // useCallback is not mandatory, but it's recommended since this callback can be memoized if static
-  const particlesInit = useCallback((engine) => {
+  const particlesInit = useCallback((engine: Engine): void => {
     loadFull(engine);
     // loadFull(engine); // for this sample the slim version is enough, choose whatever you prefer, slim is smaller in size but doesn't have all the plugins and the mouse trail feature
   }, []);
 
   // setting an id can be useful for identifying the right particles component, this is useful for multiple instances or reusable components
-  return <Particles id={props.id} init={particlesInit} options={options} />;
+  return (
+    <Particles
+      id={props.id}
+      init={particlesInit as IParticlesProps["init"]}
+      options={options}
+      className="home"
+    />
+  );
 };
 
 export default ParticlesComponent;

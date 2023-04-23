@@ -1,7 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { useGlobalContext } from "../context/context";
 import Navbar from "./Navbar";
-import Background from "./Background";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -23,12 +22,12 @@ const SharedLayout = () => {
   const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 1,
+    duration: 1.5,
   };
 
   const { darkMode } = useGlobalContext();
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <div className={darkMode ? "dark dark:bg-[#0a192f]" : "bg-[#b4ccef]"}>
       <Navbar />
       <motion.div
         key={pathname}
@@ -39,8 +38,6 @@ const SharedLayout = () => {
       >
         <Outlet />
       </motion.div>
-
-      <Background />
     </div>
   );
 };

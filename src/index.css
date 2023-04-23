@@ -20,22 +20,19 @@
   }
 }
 
+body {
+  background: #0a192f;
+}
+
 .content-div {
-  background-repeat: no repeat;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   height: 250px;
 }
 
-.content-div:hover {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(10, 25, 47, 1) 100%,
-    rgba(0, 212, 255, 1) 100%
-  ) !important;
-}
+/* .content-div:hover {
+  background-image: linear-gradient(to right, #0a192f, #0a192f) !important;
+} */
 
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 *::-webkit-scrollbar {
@@ -55,7 +52,6 @@ a.color-active.active {
 
 a.color-active-dark.active {
   color: rgb(107 114 128);
-
   font-weight: bold;
 }
 

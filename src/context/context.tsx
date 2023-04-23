@@ -8,11 +8,19 @@ export type GlobalContent = {
   setIsSidebarOpen: (arg0: boolean) => void;
   handleSidebar: () => void;
 };
-const GlobalContext = createContext<GlobalContent>();
+const GlobalContext = createContext<GlobalContent>({
+  darkMode: true,
+  setDarkMode: () => {},
+  theme: "dark",
+  setTheme: () => {},
+  isSidebarOpen: false,
+  setIsSidebarOpen: () => {},
+  handleSidebar: () => {},
+});
 
 export const useGlobalContext = () => useContext(GlobalContext);
 
-const AppContext = ({ children }) => {
+const AppContext = ({ children }: any) => {
   const [darkMode, setDarkMode] = useState(true);
 
   const [theme, setTheme] = useState<string>("dark");

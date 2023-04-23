@@ -9,6 +9,11 @@ import React from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
 import WorkImg from "../assets/workImg.jpeg";
+import GPT from "../assets/gpt.png";
+import Jobster from "../assets/job.png";
+import Vanilla from "../assets/vanilla.png";
+import CSSProjects from "../assets/css-projects.png";
+
 export const links = [
   {
     id: 1,
@@ -113,23 +118,44 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    text: "Project 1",
+    text: "Lendert's Garage",
     image: WorkImg,
     demo: "",
     code: "",
   },
   {
     id: 2,
-    text: "Project 2",
-    image: WorkImg,
-    demo: "",
-    code: "",
+    text: "Jobster",
+    image: Jobster,
+    demo: "https://job-tracker-rtk.netlify.app/",
+    code: "https://github.com/Eliasdb/jobtracker-RTK",
   },
   {
     id: 3,
-    text: "Project 3",
-    image: WorkImg,
-    demo: "",
+    text: "GPT-3.5-Turbo",
+    image: GPT,
+    demo: "https://gpt-demo-edb.netlify.app/",
+    code: "https://github.com/Eliasdb/GPT-3.5-Turbo-chatbot",
+  },
+  {
+    id: 4,
+    text: "Vanilla JS Fundamentals",
+    image: Vanilla,
+    demo: "https://js-fundamentals-edb.netlify.app/",
+    code: "https://github.com/Eliasdb/vanilla-js-fundamentals",
+  },
+  {
+    id: 5,
+    text: "CSS Layout Practice",
+    image: CSSProjects,
+    demo: "https://css-projects-edb.netlify.app/",
+    code: "https://github.com/Eliasdb/css-projects",
+  },
+  {
+    id: 6,
+    text: "Public API project",
+    image: CSSProjects,
+    demo: "https://cocktail-api-exercise.netlify.app/",
     code: "",
   },
 ];

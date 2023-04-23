@@ -47,7 +47,7 @@ const Navbar = () => {
             <NavLink
               to={url}
               className={`group dark:text-gray-300 text-[#0a192f] font-bold transition duration-300 ${
-                darkMode ? "color-active-dark" : "color-active dark"
+                darkMode ? "color-active-dark" : "color-active"
               }`}
             >
               {text}
@@ -84,9 +84,7 @@ const Navbar = () => {
             <NavLink
               to={link.url}
               onClick={handleSidebar}
-              className={`${
-                darkMode ? "color-active-dark" : "color-active dark"
-              }`}
+              className={`${darkMode ? "color-active-dark" : "color-active"}`}
             >
               {link.text}
             </NavLink>
@@ -102,7 +100,7 @@ const Navbar = () => {
             return (
               <li
                 key={id}
-                className="w-[80px] md:w-[142px] lg:w-[160px] h-[40px] md-[50px] lg:h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500"
+                className="w-[80px] md:w-[142px] lg:w-[160px] h-[40px] md-[50px] lg:h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-500 rounded-2xl"
                 style={{ background: color }}
               >
                 <a

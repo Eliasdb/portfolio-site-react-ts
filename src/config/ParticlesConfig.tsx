@@ -98,11 +98,11 @@ const ParticlesConfig: ISourceOptions = {
       },
       options: {
         background: {
-          color: "#b5a7c7",
+          color: "#b4ccef",
         },
         particles: {
           color: {
-            value: "#ff48c1",
+            value: "#0a192f",
           },
         },
       },
