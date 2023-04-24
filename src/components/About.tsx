@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="w-full h-screen  dark:text-gray-300 text-[#0a192f]">
+    <div className="w-full custom-height  dark:text-gray-300 text-[#0a192f]">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">

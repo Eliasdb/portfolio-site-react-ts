@@ -9,6 +9,9 @@ module.exports = {
         light:
           "radial-gradient(circle, rgba(180,204,239,1) 0%, rgba(10,25,47,1) 0%)",
       },
+      screens: {
+        lg: "1024px",
+      },
     },
   },
   plugins: [],

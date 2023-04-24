@@ -76,7 +76,7 @@ export const socials = [
         className="mr-[-10px] lg:mr-0 duration-300"
       />
     ),
-    url: "www.google.com?q=put_it_here",
+    url: "/public/cv.pdf",
   },
 ];
 

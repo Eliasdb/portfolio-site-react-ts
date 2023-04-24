@@ -1,4 +1,4 @@
-import type { Container, ISourceOptions, Engine } from "tsparticles-engine";
+import type { ISourceOptions } from "tsparticles-engine";
 
 const ParticlesConfig: ISourceOptions = {
   autoplay: true,

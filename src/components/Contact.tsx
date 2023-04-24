@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="w-full h-screen flex justify-center items-center p-4 dark:text-gray-300 text-[#0a192f]">
+    <div className="w-full custom-height flex justify-center items-center p-4 dark:text-gray-300 text-[#0a192f]">
       <form
         action="https://formspree.io/f/xknaqwyy"
         method="POST"

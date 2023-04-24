@@ -104,8 +104,10 @@ const Navbar = () => {
                 style={{ background: color }}
               >
                 <a
+                  download
                   className="flex justify-between items-center w-full text-gray-300 font-bold"
                   href={url}
+                  target="_blank"
                 >
                   {text} {icon}
                 </a>

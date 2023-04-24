@@ -5,7 +5,7 @@ import Background from "./Background";
 
 const Home = () => {
   return (
-    <div className="w-full h-screen">
+    <div className="w-full custom-height">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-40">
         <p className="text-[#3a4658] dark:text-gray-300 duration-1000 home">
           Hi, my name is
@@ -35,7 +35,7 @@ const Home = () => {
           repeat={0}
         />
 
-        <p className="dark:text-[#8892b0] py-4 max-w-[700px] text-[#0a192f] font-[Lato]">
+        <p className="dark:text-[#A5ABBD] py-4 max-w-[700px] text-[#0a192f] font-[Lato]">
           Having started my journey in the wondrous world of web development in
           2019, I am ready for the next step in my career. I am an ambitious and
           passionate web developer with an eagerness to learn and improve
