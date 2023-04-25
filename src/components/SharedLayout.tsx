@@ -32,8 +32,8 @@ const SharedLayout = () => {
       <div
         className={
           darkMode
-            ? "dark dark:bg-[#0a192f] flex flex-col justify-between max-h-screen"
-            : "bg-[#b4ccef] flex flex-col justify-between max-h-screen"
+            ? "dark dark:bg-[#0a192f] flex flex-col justify-between container-height"
+            : "bg-[#b4ccef] flex flex-col justify-between container-height"
         }
       >
         <Header />

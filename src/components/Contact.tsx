@@ -33,7 +33,7 @@ const Contact = () => {
           placeholder="Message"
           required
         />
-        <button className="dark:text-white border-2 dark:border-white dark:hover:bg-[#A5ABBD] hover:bg-[#0a192f] hover:text-gray-300 px-4 py-3 my-8 mx-auto flex items-center rounded-xl border-[#0a192f]">
+        <button className="dark:text-white border-2 dark:border-white dark:hover:bg-[#A5ABBD] hover:bg-[#0a192f] hover:text-gray-300 px-4 py-3 my-8 mx-auto flex items-center rounded-xl border-[#0a192f] font-semibold">
           Let's collaborate
         </button>
       </form>

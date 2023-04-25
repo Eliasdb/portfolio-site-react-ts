@@ -64,9 +64,9 @@ a.color-active-dark.active {
   font-weight: bold;
 }
 
-/* body *:not(.home) {
+body *:not(.home) {
   @apply duration-150;
-} */
+}
 
 /* *:not(.background) {
   transition-duration: 100ms;
@@ -83,11 +83,14 @@ a.color-active-dark.active {
 }
 
 .custom-height {
-  height: 82vh;
+  height: 82dvh;
+}
+.container-height {
+  max-height: 109vh;
 }
 
 .custom-height-projects {
-  height: 82vh;
+  height: 91dvh;
 }
 
 .footer {

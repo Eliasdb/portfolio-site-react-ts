@@ -5,7 +5,7 @@ import Background from "./Background";
 
 const Home = () => {
   return (
-    <main className="w-full flex custom-height">
+    <main className="w-full custom-height">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-40">
         <p className="text-[#3a4658] dark:text-gray-300 duration-1000 home">
           Hi, my name is
@@ -22,7 +22,7 @@ const Home = () => {
             2700,
             // "I am a",
             // 500,
-            "I am a Frontend Developer.",
+            "I'm a Frontend Developer.",
             2000,
             (el) => el?.classList.remove("custom-type-animation-cursor"),
             () => {
@@ -43,7 +43,7 @@ const Home = () => {
           the next level.
         </p>
         <Link to="/projects" className="max-w-[184px]">
-          <button className="max-w-[184px] dark:text-white hover:text-gray-300 text-[#0a192f] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#0a192f] hover:border-gray-800 dark:border-gray-300  dark:hover:bg-[#A5ABBD] dark:hover:opacity-90 border-[#0a192f] rounded-xl dark:bg-[#0a192f] bg-[#b4ccef]">
+          <button className="max-w-[184px] dark:text-white hover:text-gray-300 text-[#0a192f] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#0a192f] hover:border-gray-800 dark:border-gray-300  dark:hover:bg-[#A5ABBD] dark:hover:opacity-90 border-[#0a192f] rounded-xl dark:bg-[#0a192f] bg-[#b4ccef] font-semibold">
             View projects
             <span className="group-hover:rotate-90 duration-300">
               <HiArrowNarrowRight className="ml-3" />
