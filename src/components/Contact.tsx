@@ -1,6 +1,6 @@
 const Contact = () => {
   return (
-    <div className="w-full custom-height flex justify-center items-center p-4 dark:text-gray-300 text-[#0a192f]">
+    <main className="w-full flex custom-height justify-center items-center p-4 dark:text-gray-300 text-[#0a192f] dark:bg-[#0a192f] bg-[#b4ccef]">
       <form
         action="https://formspree.io/f/xknaqwyy"
         method="POST"
@@ -37,7 +37,7 @@ const Contact = () => {
           Let's collaborate
         </button>
       </form>
-    </div>
+    </main>
   );
 };
 export default Contact;

@@ -4,7 +4,7 @@ const ParticlesConfig: ISourceOptions = {
   autoplay: true,
   fullScreen: {
     enable: true,
-    zIndex: -1,
+    zIndex: -1000,
   },
   background: {
     color: {

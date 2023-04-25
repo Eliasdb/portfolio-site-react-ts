@@ -5,7 +5,7 @@ import Background from "./Background";
 
 const Home = () => {
   return (
-    <div className="w-full custom-height">
+    <main className="w-full flex custom-height">
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full z-40">
         <p className="text-[#3a4658] dark:text-gray-300 duration-1000 home">
           Hi, my name is
@@ -52,7 +52,7 @@ const Home = () => {
         </Link>
       </div>
       <Background />
-    </div>
+    </main>
   );
 };
 export default Home;

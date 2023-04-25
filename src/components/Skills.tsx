@@ -2,7 +2,7 @@ import { skills } from "../data/data";
 
 const Skills = () => {
   return (
-    <div className="dark:text-gray-300 text-[#0a192f] w-full h-screen custom-height">
+    <main className="custom-height dark:text-gray-300 text-[#0a192f] w-full dark:bg-[#0a192f] bg-[#b4ccef]">
       {/* container */}
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div>
@@ -30,7 +30,7 @@ const Skills = () => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default Skills;

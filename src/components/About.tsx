@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <div className="w-full custom-height  dark:text-gray-300 text-[#0a192f]">
+    <main className="w-full custom-height dark:text-gray-300 text-[#0a192f] dark:bg-[#0a192f] bg-[#b4ccef]">
       <div className="flex flex-col justify-center items-center w-full h-full">
         <div className="max-w-[1000px] w-full grid grid-cols-2 gap-8">
           <div className="sm:text-right pb-8 pl-4">
@@ -24,7 +24,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default About;

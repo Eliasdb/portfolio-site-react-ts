@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f] z-20 dark:bg-[#0a192f] bg-[#b4ccef]">
+    <header className="fixed w-full h-20 flex justify-between items-center px-4 dark:text-gray-300 text-[#0a192f] z-20 dark:bg-[#0a192f] bg-[#b4ccef]">
       <div>
         {darkMode ? (
           <NavLink to="/">
@@ -116,7 +116,7 @@ const Navbar = () => {
           })}
         </ul>
       </div>
-    </div>
+    </header>
   );
 };
 export default Navbar;

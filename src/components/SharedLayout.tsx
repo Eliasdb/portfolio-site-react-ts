@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 import { useGlobalContext } from "../context/context";
-import Navbar from "./Navbar";
+import Header from "./Header";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
@@ -28,25 +28,28 @@ const SharedLayout = () => {
 
   const { darkMode } = useGlobalContext();
   return (
-    <div
-      className={
-        darkMode
-          ? "dark dark:bg-[#0a192f] flex flex-col custom-height"
-          : "bg-[#b4ccef] flex flex-col custom-height"
-      }
-    >
-      <Navbar />
-      <motion.div
-        key={pathname}
-        initial="initial"
-        animate="in"
-        variants={pageVariants}
-        transition={pageTransition}
+    <>
+      <div
+        className={
+          darkMode
+            ? "dark dark:bg-[#0a192f] flex flex-col justify-between max-h-screen"
+            : "bg-[#b4ccef] flex flex-col justify-between max-h-screen"
+        }
       >
-        <Outlet />
-      </motion.div>
-      <Footer />
-    </div>
+        <Header />
+        <motion.div
+          key={pathname}
+          initial="initial"
+          animate="in"
+          variants={pageVariants}
+          transition={pageTransition}
+          className="pt-20 flex"
+        >
+          <Outlet />
+        </motion.div>
+        <Footer />
+      </div>
+    </>
   );
 };
 export default SharedLayout;

@@ -2,8 +2,8 @@ import { projects } from "../data/data";
 
 const Work = () => {
   return (
-    <div className="w-full custom-height-projects dark:text-gray-300 text-[#0a192f] pb-20 dark:bg-[#0a192f] bg-[#b4ccef]">
-      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+    <main className="w-full custom-height-projects dark:text-gray-300 text-[#0a192f]  dark:bg-[#0a192f] bg-[#b4ccef]">
+      <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8 mt-20">
           <p className="text-4xl font-bold inline border-b-4 dark:text-gray-200 text-[#0a192f] border-[#A5ABBD]">
             Projects
@@ -19,7 +19,7 @@ const Work = () => {
               <div
                 key={id}
                 style={{ backgroundImage: `url(${image})` }}
-                className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div dark:hover:!bg-dark hover:!bg-light"
+                className="shadow-md shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div dark:hover:!bg-dark hover:!bg-light"
               >
                 <div className="opacity-0 group-hover:opacity-100 text-center">
                   <span className="text-2xl font-bold text-white dark:text-[#03070e]">
@@ -43,7 +43,7 @@ const Work = () => {
           })}
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 export default Work;
