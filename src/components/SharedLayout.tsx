@@ -47,7 +47,7 @@ const SharedLayout = () => {
         >
           <Outlet />
         </motion.div>
-        <Footer />
+        <Footer bgColor="dark:bg-[#0a192f] bg-[#b4ccef]" />
       </div>
     </>
   );

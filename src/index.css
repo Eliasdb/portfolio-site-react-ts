@@ -85,12 +85,12 @@ body *:not(.home) {
 .custom-height {
   height: 82dvh;
 }
-.container-height {
+/* .container-height {
   max-height: 109vh;
-}
+} */
 
 .custom-height-projects {
-  height: 91dvh;
+  height: 82dvh;
 }
 
 .footer {
@@ -98,7 +98,6 @@ body *:not(.home) {
   justify-content: space-between;
   align-items: center;
   padding: 2rem;
-  background: inherit;
   height: 7rem;
   z-index: 4;
 }
@@ -115,13 +114,17 @@ body *:not(.home) {
     flex-direction: column;
     gap: 2rem;
     justify-content: space-evenly;
-    margin-top: 6rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
   }
 
   .space {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .custom-height {
+    height: 72dvh;
   }
 }
 

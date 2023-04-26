@@ -9,10 +9,12 @@ import React from "../assets/react.png";
 import Tailwind from "../assets/tailwind.png";
 import Node from "../assets/node.png";
 import WorkImg from "../assets/workImg.jpeg";
-import GPT from "../assets/gpt.png";
-import Jobster from "../assets/job.png";
-import Vanilla from "../assets/vanilla.png";
-import CSSProjects from "../assets/css-projects.png";
+import GPT from "../assets/gpt-n.png";
+import Jobster from "../assets/jab.png";
+import Vanilla from "../assets/mmenu.png";
+import Cocktail from "../assets/cockt.png";
+
+import CSSProjects from "../assets/css-p.png";
 
 export const links = [
   {
@@ -154,8 +156,8 @@ export const projects = [
   {
     id: 6,
     text: "Public API project",
-    image: CSSProjects,
-    demo: "https://cocktail-api-exercise.netlify.app/",
-    code: "",
+    image: Cocktail,
+    demo: "https://cocktail-api-vanilla.netlify.app/",
+    code: "https://github.com/Eliasdb/cocktail-api-exercise",
   },
 ];

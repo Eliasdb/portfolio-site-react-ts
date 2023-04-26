@@ -1,10 +1,11 @@
 import { useGlobalContext } from "../context/context";
 import { socials } from "../data/data";
 
-const Footer = () => {
-  const { darkMode } = useGlobalContext();
+const Footer = ({ bgColor }) => {
   return (
-    <footer className="footer mt-auto pl-3 pb-8 dark:text-gray-300  text-[#0a192f] w-full">
+    <footer
+      className={`footer mt-auto pl-3 pb-8 dark:text-gray-300 text-[#0a192f] w-full ${bgColor}`}
+    >
       <small className="copy">
         &copy; {new Date().getFullYear()} by{" "}
         <span className="font-bold">elias</span>
