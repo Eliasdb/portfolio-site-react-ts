@@ -155,7 +155,7 @@ export const projects = [
   },
   {
     id: 6,
-    text: "Public API project",
+    text: "Cocktails API",
     image: Cocktail,
     demo: "https://cocktail-api-vanilla.netlify.app/",
     code: "https://github.com/Eliasdb/cocktail-api-exercise",

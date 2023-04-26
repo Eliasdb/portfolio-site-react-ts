@@ -31,7 +31,7 @@ const Work = () => {
                         Demo
                       </button>
                     </a>
-                    <a href={code}>
+                    <a target="blank" href={code}>
                       <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-[#0a192f] font-bold text-lg">
                         Code
                       </button>
