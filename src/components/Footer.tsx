@@ -1,7 +1,10 @@
-import { useGlobalContext } from "../context/context";
 import { socials } from "../data/data";
 
-const Footer = ({ bgColor }) => {
+type Props = {
+  bgColor: string;
+};
+
+const Footer = ({ bgColor }: Props) => {
   return (
     <footer
       className={`footer mt-auto pl-3 pb-8 dark:text-gray-300 text-[#0a192f] w-full ${bgColor}`}
