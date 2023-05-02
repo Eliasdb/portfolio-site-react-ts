@@ -31,7 +31,7 @@ const Home = () => {
     duration: 1.5,
   };
   return (
-    <>
+    <main>
       <div
         className={
           darkMode
@@ -100,7 +100,7 @@ const Home = () => {
 
         <Footer bgColor="bg-transparent" />
       </div>
-    </>
+    </main>
   );
 };
 export default Home;

@@ -89,7 +89,7 @@ body *:not(.home) {
   max-height: 109vh;
 } */
 
-.custom-height-projects {
+.custom-height-skills {
   height: 82dvh;
 }
 
@@ -136,7 +136,7 @@ body *:not(.home) {
 }
 
 @media (max-width: 1024px) {
-  .custom-height-projects {
+  .custom-height-skills {
     height: auto;
   }
 }

@@ -2,7 +2,7 @@ import { projects } from "../data/data";
 
 const Work = () => {
   return (
-    <main className="w-full custom-height-projects dark:text-gray-300 text-[#0a192f]  dark:bg-[#0a192f] bg-[#b4ccef]">
+    <main className="w-full dark:text-gray-300 text-[#0a192f]  dark:bg-[#0a192f] bg-[#b4ccef]">
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full">
         <div className="pb-8 mt-20">
           <p className="text-4xl font-bold inline border-b-4 dark:text-gray-200 text-[#0a192f] border-[#A5ABBD]">

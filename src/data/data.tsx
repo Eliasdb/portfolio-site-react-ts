@@ -5,16 +5,20 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import HTML from "../assets/html.png";
 import CSS from "../assets/css.png";
 import JS from "../assets/javascript.png";
-import React from "../assets/react.png";
+import React from "../assets/rekt.png";
 import Tailwind from "../assets/tailwind.png";
-import Node from "../assets/node.png";
-import Sloth from "../assets/sloth.png";
-import GPT from "../assets/gpt-n.png";
-import Jobster from "../assets/jab.png";
-import Vanilla from "../assets/mmenu.png";
-import Cocktail from "../assets/cockt.png";
+import Node from "../assets/node-js.png";
+import Redux from "../assets/redux.png";
+import SC from "../assets/file-type-styled.svg";
+import Typescript from "../assets/typescript-programming-language-icon.png";
 
-import CSSProjects from "../assets/css-p.png";
+import LG from "../assets/LG-final.jpg";
+import GPT from "../assets/gpt.jpg";
+import Jobster from "../assets/jobster.jpg";
+import Vanilla from "../assets/menu.jpg";
+import Cocktail from "../assets/cocktail-api.jpg";
+import CSSProjects from "../assets/css-projects.jpg";
+import TS from "../assets/ts-thumbnail.jpg";
 
 export const links = [
   {
@@ -115,13 +119,28 @@ export const skills = [
     text: "React",
     image: React,
   },
+  {
+    id: 7,
+    text: "Redux Toolkit",
+    image: Redux,
+  },
+  {
+    id: 8,
+    text: "Styled components",
+    image: SC,
+  },
+  {
+    id: 9,
+    text: "Typescript",
+    image: Typescript,
+  },
 ];
 
 export const projects = [
   {
     id: 1,
     text: "Lendert's Garage",
-    image: Sloth,
+    image: LG,
     demo: "https://lenderts-garage.netlify.app",
     code: "https://github.com/Eliasdb/ecommerce-react",
   },
@@ -159,5 +178,12 @@ export const projects = [
     image: Cocktail,
     demo: "https://cocktail-api-vanilla.netlify.app",
     code: "https://github.com/Eliasdb/cocktail-api-exercise",
+  },
+  {
+    id: 7,
+    text: "Typescript projects",
+    image: TS,
+    demo: "https://typescript-projects-edb.netlify.app",
+    code: "https://github.com/Eliasdb/typescript-only-projects",
   },
 ];
