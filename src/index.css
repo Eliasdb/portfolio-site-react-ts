@@ -83,14 +83,14 @@ body *:not(.home) {
 }
 
 .custom-height {
-  height: 82dvh;
+  height: calc(100dvh - (7rem + 5rem));
 }
 /* .container-height {
   max-height: 109vh;
 } */
 
 .custom-height-skills {
-  height: 82dvh;
+  height: calc(100dvh - (7rem + 5rem));
 }
 
 .footer {
