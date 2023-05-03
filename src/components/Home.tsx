@@ -80,10 +80,10 @@ const Home = () => {
 
               <p className="dark:text-[#A5ABBD] py-4 max-w-[700px] text-[#0a192f] font-[Lato]">
                 Having started my journey in the wondrous world of web
-                development in 2019, I am ready for the next step in my career.
-                I am an ambitious and passionate web developer with an eagerness
-                to learn and improve continuously. Looking for an environment to
-                grow and take my skills to the next level.
+                development in 2019, I am now ready for the next step in my
+                career. I am an ambitious and passionate web developer with an
+                eagerness to learn and improve continuously. Looking for an
+                environment to grow and take my skills to the next level.
               </p>
               <Link to="/projects" className="max-w-[184px]">
                 <button className="max-w-[184px] dark:text-white hover:text-gray-300 text-[#0a192f] group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#0a192f] hover:border-gray-800 dark:border-gray-300  dark:hover:bg-[#A5ABBD] dark:hover:opacity-90 border-[#0a192f] rounded-xl dark:bg-[#0a192f] bg-[#b4ccef] font-semibold">

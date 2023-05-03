@@ -8,7 +8,7 @@ const Work = () => {
           <p className="text-4xl font-bold inline border-b-4 dark:text-gray-200 text-[#0a192f] border-[#A5ABBD]">
             Projects
           </p>
-          <p className="py-6">// Check out my recent work</p>
+          <p className="py-6">// Check out what I have been up to recently</p>
         </div>
         {/* container */}
         <div className="grid sm:grid-cols-2 md:grid-cols-2 gap-8 lg:grid-cols-3 space">

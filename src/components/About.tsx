@@ -16,10 +16,11 @@ const About = () => {
           </div>
           <div>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
-              praesentium consectetur ut minima assumenda perferendis veritatis
-              porro provident. Nulla laborum delectus id odit hic nesciunt totam
-              quidem eum, similique sit!
+              I am a frontend web developer with an growing interest in backend
+              and really anything tech related. When I am not behind my
+              computer, I like to work out and enjoy long contemplative walks in
+              nature listening to all sorts of music. I like stories in any
+              form, be it in music, dance, movies or books.
             </p>
           </div>
         </div>
