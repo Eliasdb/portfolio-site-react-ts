@@ -82,7 +82,7 @@ export const socials = [
         className="mr-[-10px] lg:mr-0 duration-300"
       />
     ),
-    url: "/public/cv.pdf",
+    url: "/public/CV_Elias_De_Bock_23.pdf",
   },
 ];
 
