@@ -13,3 +13,5 @@ A personal website showcasing my projects.
 - framer-motion
 - react-type-animation
 - Vite
+
+## [Live](https://elias-de-bock.netlify.app)

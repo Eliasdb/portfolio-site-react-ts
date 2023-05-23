@@ -13,20 +13,6 @@ const Footer = ({ bgColor }: Props) => {
         &copy; {new Date().getFullYear()} by{" "}
         <span className="font-bold">elias</span>
       </small>
-      <div className="socials xl:hidden">
-        <ul className="social-links pr-4">
-          {socials.map((social) => {
-            const { id, icon, url } = social;
-            return (
-              <li key={id}>
-                <a href={url} className="hover:text-white">
-                  {icon}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
     </footer>
   );
 };

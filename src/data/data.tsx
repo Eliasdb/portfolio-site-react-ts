@@ -19,6 +19,7 @@ import Vanilla from "../assets/menu.jpg";
 import Cocktail from "../assets/cocktail-api.jpg";
 import CSSProjects from "../assets/css-projects.jpg";
 import TS from "../assets/ts-thumbnail.jpg";
+import FS from "../assets/fullstack.png";
 
 export const links = [
   {
@@ -139,51 +140,59 @@ export const skills = [
 export const projects = [
   {
     id: 1,
-    text: "Lendert's Garage",
-    image: LG,
-    demo: "https://lenderts-garage.netlify.app",
-    code: "https://github.com/Eliasdb/ecommerce-react",
-  },
-  {
-    id: 2,
-    text: "Jobster",
-    image: Jobster,
-    demo: "https://job-tracker-rtk.netlify.app",
-    code: "https://github.com/Eliasdb/jobtracker-RTK",
-  },
-  {
-    id: 3,
-    text: "GPT-3.5-Turbo",
-    image: GPT,
-    demo: "https://gpt-demo-edb.netlify.app",
-    code: "https://github.com/Eliasdb/GPT-3.5-Turbo-chatbot",
-  },
-  {
-    id: 4,
-    text: "Vanilla JS Fundamentals",
-    image: Vanilla,
-    demo: "https://js-fundamentals-edb.netlify.app",
-    code: "https://github.com/Eliasdb/vanilla-js-fundamentals",
-  },
-  {
-    id: 5,
-    text: "CSS Layout Practice",
-    image: CSSProjects,
-    demo: "https://css-projects-edb.netlify.app",
-    code: "https://github.com/Eliasdb/css-projects",
-  },
-  {
-    id: 6,
     text: "Cocktails API",
     image: Cocktail,
     demo: "https://cocktail-api-vanilla.netlify.app",
     code: "https://github.com/Eliasdb/cocktail-api-exercise",
   },
   {
-    id: 7,
+    id: 2,
+    text: "CSS Layout Practice",
+    image: CSSProjects,
+    demo: "https://css-projects-edb.netlify.app",
+    code: "https://github.com/Eliasdb/css-projects",
+  },
+  {
+    id: 3,
+    text: "Vanilla JS Fundamentals",
+    image: Vanilla,
+    demo: "https://js-fundamentals-edb.netlify.app",
+    code: "https://github.com/Eliasdb/vanilla-js-fundamentals",
+  },
+  {
+    id: 4,
     text: "Typescript projects",
     image: TS,
     demo: "https://typescript-projects-edb.netlify.app",
     code: "https://github.com/Eliasdb/typescript-only-projects",
+  },
+  {
+    id: 5,
+    image: GPT,
+    text: "GPT-3.5-Turbo",
+    demo: "https://gpt-demo-edb.netlify.app",
+    code: "https://github.com/Eliasdb/GPT-3.5-Turbo-chatbot",
+  },
+  {
+    id: 6,
+    text: "Jobster",
+    image: Jobster,
+    demo: "https://job-tracker-rtk.netlify.app",
+    code: "https://github.com/Eliasdb/jobtracker-RTK",
+  },
+  {
+    id: 7,
+    text: "Lendert's Garage",
+    image: LG,
+    demo: "https://lenderts-garage.netlify.app",
+    code: "https://github.com/Eliasdb/ecommerce-react",
+  },
+  {
+    id: 8,
+
+    text: "fullStack - Admin panel",
+    image: FS,
+    demo: "https://fullstack-admin-space.netlify.app/login",
+    code: "https://github.com/Eliasdb/mern-blog-admin",
   },
 ];
