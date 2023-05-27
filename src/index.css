@@ -135,8 +135,17 @@ body *:not(.home) {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 760px) {
   .custom-height-skills {
     height: auto;
   }
+}
+
+.title {
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0 3rem;
 }

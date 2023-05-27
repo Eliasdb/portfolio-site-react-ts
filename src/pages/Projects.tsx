@@ -20,7 +20,7 @@ const Work = () => {
                 <div
                   key={id}
                   style={{ backgroundImage: `url(${image})` }}
-                  className="shadow-md shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div dark:hover:!bg-dark hover:!bg-light"
+                  className="shadow-md shadow-[#040c16] group container rounded-2xl flex justify-center items-center mx-auto content-div dark:hover:!bg-dark hover:!bg-light"
                 >
                   <div className="opacity-0 group-hover:opacity-100 text-center">
                     <span className="text-2xl font-bold text-white dark:text-[#03070e]">

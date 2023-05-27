@@ -1,9 +1,9 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link, useLocation } from "react-router-dom";
 import { TypeAnimation } from "react-type-animation";
-import Background from "./Background";
-import Footer from "./Footer";
-import Header from "./Header";
+import Background from "../components/Background";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
 import { motion } from "framer-motion";
 import { useGlobalContext } from "../context/context";

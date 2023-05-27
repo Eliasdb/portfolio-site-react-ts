@@ -4,7 +4,7 @@ const Contact = () => {
       <form
         action="https://formspree.io/f/xknaqwyy"
         method="POST"
-        className="flex flex-col max-w-[700px] w-full"
+        className="flex flex-col max-w-[1000px] w-full"
       >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-[#A5ABBD] dark:text-gray-200 text-[#0a192f]">

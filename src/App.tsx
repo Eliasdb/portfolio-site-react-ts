@@ -1,10 +1,5 @@
 import "./App.css";
-import About from "./components/About";
-import Home from "./components/Home";
-import Error from "./components/Error";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import { About, Home, Error, Skills, Projects, Contact, Blog } from "./pages";
 import {
   Routes,
   Route,
@@ -38,6 +33,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/blog" element={<Blog />} /> */}
           <Route path="*" element={<Error />} />
         </Route>
         <Route path="/" element={<Home />} />
