@@ -42,11 +42,11 @@ export const links = [
     text: "Projects",
     url: "/projects",
   },
-  // {
-  //   id: 5,
-  //   text: "Blog",
-  //   url: "/blog",
-  // },
+  {
+    id: 5,
+    text: "Blog",
+    url: "/blog",
+  },
   {
     id: 6,
     text: "Contact",

@@ -18,9 +18,9 @@ const Blog = () => {
   }, []);
 
   return (
-    <>
-      <p>Under construction...</p>
-    </>
+    <section className="flex h-[80vh] w-full items-center justify-center ">
+      <p className="text-gray-300 text-4xl">Under construction...</p>
+    </section>
     // <section className="blog custom-height-skills p-4 w-[1000px] mx-auto">
     //   <div className="blog-title mb-16 pb-8 mt-20">
     //     <p className="text-4xl font-bold inline border-b-4 border-[#A5ABBD] dark:text-gray-200 ">
