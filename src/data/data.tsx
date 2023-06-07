@@ -13,6 +13,9 @@ import SC from "../assets/file-type-styled.svg";
 import Typescript from "../assets/typescript-programming-language-icon.png";
 
 import LG from "../assets/LG-final.jpg";
+import Graph from "../assets/graphql.png";
+import Octane from "../assets/octane.png";
+
 import GPT from "../assets/gpt.jpg";
 import Jobster from "../assets/jobster.jpg";
 import Vanilla from "../assets/menu.jpg";
@@ -199,5 +202,21 @@ export const projects = [
     image: FS,
     demo: "https://fullstack-admin-space.netlify.app/login",
     code: "https://github.com/Eliasdb/mern-blog-admin",
+  },
+  {
+    id: 9,
+
+    text: "CSS Library in SASS with Next",
+    image: Octane,
+    demo: "https://octane-css-library.netlify.app",
+    code: "https://github.com/Eliasdb/sass-css-library",
+  },
+  {
+    id: 10,
+
+    text: "Project Management tool GRAPHQL",
+    image: Graph,
+    demo: "https://graphql-project-management.netlify.app",
+    code: "https://github.com/Eliasdb/graphql-project-management",
   },
 ];
