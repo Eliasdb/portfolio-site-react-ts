@@ -3,6 +3,11 @@ import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
 import HTML from "../assets/html.png";
+import Next from "../assets/next-js.svg";
+import Sass from "../assets/sass-1.svg";
+import Mongo from "../assets/mongodb-icon.svg";
+import GraphQL from "../assets/graphql-icon.svg";
+
 import CSS from "../assets/css.png";
 import JS from "../assets/javascript.png";
 import React from "../assets/rekt.png";
@@ -135,13 +140,28 @@ export const skills = [
   },
   {
     id: 8,
-    text: "Styled components",
-    image: SC,
+    text: "Next.js",
+    image: Next,
   },
   {
     id: 9,
     text: "Typescript",
     image: Typescript,
+  },
+  {
+    id: 9,
+    text: "Sass",
+    image: Sass,
+  },
+  {
+    id: 10,
+    text: "Mongo DB",
+    image: Mongo,
+  },
+  {
+    id: 11,
+    text: "GraphQL",
+    image: GraphQL,
   },
 ];
 

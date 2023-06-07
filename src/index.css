@@ -90,7 +90,7 @@ body *:not(.home) {
 } */
 
 .custom-height-skills {
-  height: calc(100dvh - (7rem + 5rem));
+  height: calc(140dvh - (7rem + 5rem));
 }
 
 .footer {
