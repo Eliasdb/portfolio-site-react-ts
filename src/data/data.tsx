@@ -96,7 +96,7 @@ export const socials = [
         className="mr-[-10px] lg:mr-0 duration-300"
       />
     ),
-    url: "/public/edb_cv.pdf",
+    url: "/edb_cv.pdf",
   },
 ];
 
