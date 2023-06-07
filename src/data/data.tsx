@@ -217,7 +217,6 @@ export const projects = [
   },
   {
     id: 8,
-
     text: "fullStack - Admin panel",
     image: FS,
     demo: "https://fullstack-admin-space.netlify.app/login",
@@ -225,16 +224,14 @@ export const projects = [
   },
   {
     id: 9,
-
-    text: "CSS Library in SASS with Next",
+    text: "CSS Library in SASS with Next.js",
     image: Octane,
     demo: "https://octane-css-library.netlify.app",
     code: "https://github.com/Eliasdb/sass-css-library",
   },
   {
     id: 10,
-
-    text: "Project Management tool GRAPHQL",
+    text: "Project Management tool GraphQL",
     image: Graph,
     demo: "https://graphql-project-management.netlify.app",
     code: "https://github.com/Eliasdb/graphql-project-management",
