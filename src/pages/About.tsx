@@ -16,11 +16,12 @@ const About = () => {
           </div>
           <div>
             <p>
-              I am a frontend web developer with an growing interest in backend
-              and really anything tech related. When I am not behind my
-              computer, I like to work out and enjoy long contemplative walks in
-              nature listening to all sorts of music. I like stories in any
-              form, be it in music, dance, movies or books.
+              I am a software developer with an interest in developing full
+              stack web and iOS applications and really anything tech related.
+              When I am not behind my computer, I like to work out and enjoy
+              long contemplative walks in nature listening to all sorts of
+              music. I like stories in any form, be it in music, dance, movies
+              or books.
             </p>
           </div>
         </div>
