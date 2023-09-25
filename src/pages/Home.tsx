@@ -69,7 +69,7 @@ const Home = () => {
                   500,
                   "I'm a Backend",
                   500,
-                  "I'm a iOS",
+                  "I'm an iOS",
                   500,
                   // wait 1s before replacing "Mice" with "Hamsters"
                   "I'm a Software Developer.",
